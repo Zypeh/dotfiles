@@ -1,0 +1,21 @@
+! .Xresources
+
+!Colour scheme
+#include "/home/hans/.config/africa"
+
+! Urxvt
+urxvt*url-launcher:	/usr/bin/chromium
+urxvt*cursorBlink:	true
+urxvt*scrollBar:	false
+urxvt*depth:		32
+urxvt*internalBorder:	5
+urxvt*dynamicColors:	on
+urxvt.urgentOnBell:	true
+
+
+! Xclock
+xclock*majorColor:  #9a875f
+xclock*minirColor:  #9a875f
+xclock*hourColor:   #9a875f
+xclock*secondColor: #9a875f
+
