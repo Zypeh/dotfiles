@@ -1,0 +1,38 @@
+!Milan
+
+*background: #1F1F22
+*foreground: #F3F3F3
+*cursorColor: #F3F3F3
+
+! Black
+*color0: #333333
+*color8: #333333
+
+! Red
+*color1: #BF5C56
+*color9: #BF5C56
+
+! Green
+*color2: #97B19C
+*color10: #97B19C
+
+! Yellow
+*color3: #D7BD8A
+*color11: #D7B18A
+
+! Blue
+*color4: #545F72
+*color12: #545F72
+
+! Magenta
+*color5: #DD949A
+*color13: #DD949A
+
+! Cyan
+*color6: #BE926B
+*color14: #BE926B
+
+! White
+*color7: #F4F4F2
+*color15: #F4F4F2
+
