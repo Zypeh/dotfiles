@@ -1,0 +1,26 @@
+[colors]
+foreground = #A5A5A5
+foreground_bold = #fedfed
+#foreground_dim = #888888
+background = #161616
+#cursor = #dcdccc
+
+color0 = #343434
+color1 = #802828
+color2 = #909737
+color3 = #B27d12
+color4 = #1E5673
+color5 = #642337
+color6 = #196271
+color7 = #B3B3B3
+color8 = #424242
+color9 = #8A3232
+color10 = #9CA554
+color11 = #DDB62B
+color12 = #1E6A9A
+color13 = #7D2D41
+color14 = #197885
+color15 = #B3B3B3
+
+[options]
+font = SourceCodePro 9
