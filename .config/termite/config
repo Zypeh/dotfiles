@@ -1,26 +1,30 @@
+[options]
+transparency = 0.0
+pseudo_transparency = false
+cursor_blink = off
+font = SourceCodePro 9
+
 [colors]
-foreground = #A5A5A5
+foreground = #F9F9F9
 foreground_bold = #fedfed
 #foreground_dim = #888888
-background = #161616
+background = #141415
 #cursor = #dcdccc
 
-color0 = #343434
-color1 = #802828
-color2 = #909737
-color3 = #B27d12
-color4 = #1E5673
-color5 = #642337
-color6 = #196271
-color7 = #B3B3B3
+color0 = #454545
+color1 = #AA0E50
+color2 = #B7CE42
+color3 = #FEA63C
+color4 = #7182A8
+color5 = #612737
+color6 = #6DA3A1
+color7 = #B7BBBD
 color8 = #424242
-color9 = #8A3232
-color10 = #9CA554
-color11 = #DDB62B
-color12 = #1E6A9A
-color13 = #7D2D41
-color14 = #197885
-color15 = #B3B3B3
+color9 = #BE0E50
+color10 = #BDE077
+color11 = #FFE863
+color12 = #8194BF
+color13 = #591F2F
+color14 = #669997
+color15 = #D9D9D9
 
-[options]
-font = SourceCodePro 9
