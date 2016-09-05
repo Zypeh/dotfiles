@@ -1,0 +1,17 @@
+
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = zypeh
+	email = zypeh.geek@gmail.com
+	signingkey = SUPERSECRETANON
+[push]
+	default = simple
+[commit]
+	gpgsign = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
