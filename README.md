@@ -1,16 +1,11 @@
+<img align="right" src="https://zypeh.github.io/favicon.png" alt="Backpack" />
 Dotfiles
 ========
-<img align="right" src="http://zypeh.github.io/favicon.png" alt="Backpack" />
-
-All of my configuration files. Serve as a digital nomad's backpack
-
-Todo
-----
-- [ ] Bootstrap scripts
-- [ ] Emacs Integrations
+个人的开发环境和日常使用配置，充当数码游民的背包
 
 ---
 
 > [zypeh.github.io](https://zypeh.github.io) &nbsp;&middot;&nbsp;
-> GitHub [@zypeh](https://github.com/zypeh) &nbsp;&middot;&nbsp;
-> Twitter [@ZhengyanPeh](https://twitter.com/ZhengyanPeh)Â
+> Github [@zypeh](https://github.com/zypeh) &nbsp;&middot;&nbsp;
+> Twitter [@ZhengyanPeh](https://twitter.com/ZhengyanPeh)
+
