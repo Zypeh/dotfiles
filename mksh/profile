@@ -2,6 +2,7 @@
 
 if [ ! "$SSH_AGENT_PID" -a ! "$SSH_AUTH_SOCK" ]; then
     eval `ssh-agent -s`
+    ssh-add ~/.ssh/id_github
 fi
 
 ulimit -s unlimited
@@ -12,7 +13,9 @@ export CC=gcc
 export CXX=g++
 export MANPAGER=less
 export EDITOR=vim
-export LC_ADD=en_US.UTF-8
+export CHARSET=UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 export PREFIX=$HOME/.local
 
 # XDG
@@ -24,4 +27,10 @@ export XDG_DATA_HOME=$HOME/.local/share
 ## User scripts
 export PATH=$PATH:$HOME/scripts
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:/usr/local/bin
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 
