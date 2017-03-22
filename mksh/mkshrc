@@ -1,0 +1,10 @@
+PS1='[1;37m$[0m'
+PS2='> '
+HISTSIZE=10240
+HISTFILE=~/.history
+
+export PS1 PS2 HISTSIZE HISTFILE
+
+alias l='ls -1 --color=auto'
+alias ll='l -l'
+

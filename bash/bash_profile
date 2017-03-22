@@ -1,0 +1,5 @@
+# Bash is dumb, it reads only .bashrc interactively and non-login.
+
+source $HOME/.profile
+source $HOME/.bashrc
+

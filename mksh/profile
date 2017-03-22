@@ -1,0 +1,27 @@
+# This file is evaluated for all login shells
+
+if [ ! "$SSH_AGENT_PID" -a ! "$SSH_AUTH_SOCK" ]; then
+    eval `ssh-agent -s`
+fi
+
+ulimit -s unlimited
+
+export HOSTTYPE="$(uname -m)"
+export COLORTERM=yes
+export CC=gcc
+export CXX=g++
+export MANPAGER=less
+export EDITOR=vim
+export LC_ADD=en_US.UTF-8
+export PREFIX=$HOME/.local
+
+# XDG
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+
+# PATHS
+
+## User scripts
+export PATH=$PATH:$HOME/scripts
+export PATH=$PATH:$HOME/.local/bin
+
