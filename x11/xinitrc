@@ -1,0 +1,21 @@
+#!/bin/sh
+echo Starting X session
+
+# Disable bell
+xset b off
+
+# Setup keyboard; swap ctrl with caps lock
+setxkbmap -layout us -option ctrl:nocaps
+
+# xbindkeys manages keybindings not specific to the window manager
+xbindkeys
+
+# Xresources
+xrdb ~/.Xresources
+
+# Window-manager
+echo $PATH
+ulimit -c unlimited
+xmonad
+echo Terminating X session
+

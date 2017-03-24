@@ -24,3 +24,7 @@ ln -sf $config/git/'gitconfig' '.gitconfig'
 # user scripts
 ln -sf $config/scripts 'scripts'
 
+# X11 related
+ln -sf $config/x11/'xsession' '.xsession'
+ln -sf $config/x11/'Xdefaults' '.Xdefaults'
+

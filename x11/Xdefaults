@@ -1,0 +1,7 @@
+!! Apearance
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: false
+urxvt.font: xft:Iosevka Term:size=10:style=Bold
+urxvt.boldFont: xft:Iosevka Term:size=10:style=Heavy,Regular
+urxvt.saveLines: 10240
+
