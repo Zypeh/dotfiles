@@ -1,5 +1,4 @@
 PS1='$(_prompt) '
-PS2='>>'
 
 HISTSIZR=10240
 HISTFILE=~/.history
@@ -27,8 +26,11 @@ _prompt() {
 	esac
 
 	RET="\e[38;5;${RET}m"
-	RET="${RET}-\e[0m "
+	RET="\n\e[1;34m$(pwd)\e[0m  $(_git)\n${RET}-\e[0m "
 	
 	$PRINT $RET
 }
 
+_git() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
