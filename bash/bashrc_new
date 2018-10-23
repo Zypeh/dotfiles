@@ -1,0 +1,79 @@
+
+alias l="ls -1 --color=auto"
+alias ll="l -l"
+alias lla="ll -a"
+alias llah="lla -h"
+
+PS1='$(_prompt) '
+export CLICOLOR=1
+
+PRINT='echo -en'
+[ `$PRINT | wc -c` -ne 0 ] && PRINT=printf
+
+_prompt() {
+	case $? in
+	# EXIT_SUCCESS or ^C
+	0|130)
+		RET=240
+		;;
+	# Command not found
+	127)
+		RET=196
+		;;
+	*)
+		RET=202
+		;;
+	esac
+
+	RET="\033[38;5;${RET}m"
+	RET="\n\033[1;34m$(pwd)\033[0m  $(_git)\n${RET}-\033[0m "
+	
+	$PRINT $RET
+}
+
+_git() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export HOSTTYPE="$(uname -m)"
+export COLORTERM=yes
+export CC=clang
+export CXX=clang++
+export MANPAGER=less
+export EDITOR=vim
+export CHARSET="UTF-8"
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+# export PREFIX=$HOME/.local
+
+# XDG
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+
+# PATHS
+
+## User scripts=$PATH:$HOME/scripts=$PATH:$HOME/.local/bin=$PATH:/usr/local/bin
+
+## export GOROOT=$HOME/go
+export GOPATH="$HOME/go"
+PATH="$PATH:$GOPATH/bin"
+PATH="$PATH:/usr/local/go/bin"
+
+PATH="$PATH:$HOME/.cargo/bin"
+
+export NVM_DIR="/Users/zypeh/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# ML related
+PATH="$HOME/.local/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/zypeh/.config/google-cloud-sdk/path.bash.inc' ]; then source '/Users/zypeh/.config/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/zypeh/.config/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/zypeh/.config/google-cloud-sdk/completion.bash.inc'; fi
+
+export PATH="/usr/local/sbin:$PATH"
+
+# opam configuration
+test -r /Users/zypeh/.opam/opam-init/init.sh && . /Users/zypeh/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
